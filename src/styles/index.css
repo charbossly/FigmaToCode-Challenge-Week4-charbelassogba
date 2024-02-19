@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* ****************************
+    Common Buttons
+    **************************** */
+  .primary-btn {
+    @apply border bg-blackUi dark:bg-white dark:border-white dark:text-blackUi border-blackUi text-white text-t16 font-semibold rounded-[4px] hover:shadow-none px-4 py-2;
+  }
+  .primary-btn-outlined {
+    @apply border border-blackUi text-blackUi dark:border-white dark:text-white text-t16  font-semibold rounded-[4px] hover:shadow-none bg-transparent px-4 py-2;
+  }
+  .primary-btn-other {
+    @apply border border-blackUi bg-grayUi hover:bg-opacity-35;
+  }
+
+  /* ****************************
+    website fonts
+    **************************** */
+
+  @font-face {
+    font-family: "sora";
+    src: url(../assets/fonts/Sora-VariableFont_wght.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "steelfish";
+    src: url(../assets/fonts/steelfish.otf) format("opentype");
+  }
+  @font-face {
+    font-family: "fill";
+    src: url(../assets/fonts/fill.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "baltimore";
+    src: url(../assets/fonts/Baltimore.otf) format("opentype");
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
